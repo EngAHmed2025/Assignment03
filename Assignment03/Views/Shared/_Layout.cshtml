@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    @* Start Header*@
+    <nav>
+        <center>
+            <a herf="Home/Index" class="btn btn-primary">Home</a>
+            <a herf="Home/AboutUs" class="btn btn-warning">About Us</a>
+            <a herf="Home/Privacy" class="btn btn-success">Privacy</a>
+            <a herf="Home/ContactUS" class="btn btn-light">ContactUS</a>
+            <a herf="Account/Login" class="btn btn-danger">Login</a>
+            <a herf="Account/Register" class="btn btn-info">Register</a>
+        </center>
+    </nav>
+    @*End Header*@
+
+    <div>
+        @RenderBody()
+    </div>
+
+    @*Start Footer*@
+    <footer>
+        <Center>
+            <div>
+                <p>CopyRights & copy; for SDO @DateTime.Now.Year</p>
+            </div>
+        </Center>
+    </footer>
+    @*End Footer*@
+</body>
+</html>
